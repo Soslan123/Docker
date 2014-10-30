@@ -13,6 +13,6 @@ def upload_file():
     if request.method == 'POST':
         f = request.files['file']
         f.save('./uploads/'+f.filename)
-    return '',201
+    return '',202
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
